@@ -1,0 +1,29 @@
+﻿<Window x:Class="Tic_Tac_Toe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tic_Tac_Toe"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="520" Width="570">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="118*"/>
+            <ColumnDefinition Width="159*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="but1" Content="" HorizontalAlignment="Left" Margin="126,84,0,0" VerticalAlignment="Top" Height="97" Width="100" Click="Clicks" FontSize="48" IsEnabled="False"/>
+        <Button x:Name="but2" Content="" HorizontalAlignment="Left" Margin="6,84,0,0" VerticalAlignment="Top" Height="97" Width="100" Click="Clicks" Grid.Column="1" IsEnabled="False" FontSize="48"/>
+        <Button x:Name="but4" Content="" HorizontalAlignment="Left" Margin="126,194,0,0" VerticalAlignment="Top" Height="97" Width="100" Click="Clicks" IsEnabled="False" FontSize="48"/>
+        <Button x:Name="but5" Content="" HorizontalAlignment="Left" Margin="6,195,0,0" VerticalAlignment="Top" Height="96" Width="100" Click="Clicks" Grid.Column="1" IsEnabled="False" FontSize="48"/>
+        <Button x:Name="but6" Content="" HorizontalAlignment="Left" Margin="117,194,0,0" VerticalAlignment="Top" Height="97" Width="100" Click="Clicks" Grid.Column="1" IsEnabled="False" FontSize="48"/>
+        <Button x:Name="but3" Content="" HorizontalAlignment="Left" Margin="118,84,0,0" VerticalAlignment="Top" Height="96" Width="100" Click="Clicks" Grid.Column="1" IsEnabled="False" FontSize="48"/>
+        <Button x:Name="but7" Content="" HorizontalAlignment="Left" Margin="126,304,0,0" VerticalAlignment="Top" Height="96" Width="100" RenderTransformOrigin="0.484,0.629" Click="Clicks" IsEnabled="False" FontSize="48"/>
+        <Button x:Name="but8" Content="" HorizontalAlignment="Left" Margin="6,304,0,0" VerticalAlignment="Top" Height="96" Width="100" Click="Clicks" Grid.Column="1" IsEnabled="False" FontSize="48"/>
+        <Button x:Name="but9" Content="" HorizontalAlignment="Left" Margin="117,304,0,0" VerticalAlignment="Top" Height="96" Width="100" Click="Clicks" Grid.Column="1" IsEnabled="False" FontSize="48"/>
+        <Button x:Name="but_start" Content="НОВАЯ ИГРА" HorizontalAlignment="Left" Margin="126,419,0,0" VerticalAlignment="Top" Height="55" Width="324" FontSize="20" FontFamily="Georgia" Grid.ColumnSpan="2" Click="but_start_Click"/>
+        <TextBlock x:Name="textbk" HorizontalAlignment="Left" Margin="126,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="324" Text="КРЕСТИКИ-НОЛИКИ" TextAlignment="Center" FontSize="18" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
